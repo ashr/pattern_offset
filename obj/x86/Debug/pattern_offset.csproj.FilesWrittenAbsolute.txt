@@ -1,0 +1,5 @@
+/home/ashr/dev/linux-dotnet/batches/pattern_offset/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/ashr/dev/linux-dotnet/batches/pattern_offset/bin/Debug/pattern_offset.exe.mdb
+/home/ashr/dev/linux-dotnet/batches/pattern_offset/bin/Debug/pattern_offset.exe
+/home/ashr/dev/linux-dotnet/batches/pattern_offset/obj/x86/Debug/pattern_offset.exe
+/home/ashr/dev/linux-dotnet/batches/pattern_offset/obj/x86/Debug/pattern_offset.exe.mdb
