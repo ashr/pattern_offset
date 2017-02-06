@@ -78,9 +78,22 @@ namespace ashr.net.hacktools
 			return (output.ToString ().Substring(0,Length));			
 		}
 
+		private string createAscii(string Hex){
+			StringBuilder sb = new StringBuilder ();
+			for (int i = 0; i < Hex.Length; i += 2)
+			{
+				string hs = Hex.Substring(i, 2);
+				sb.Append(Convert.ToChar(Convert.ToUInt32(hs, 16)));
+			}
+			return sb.ToString ();
+		}
+
 		public void PrintOffset(string Pattern, int Length){
+			Pattern = createAscii (Pattern);
+			Console.WriteLine ("Looking for:" + Pattern);
+
 			string internalPattern = GenerateBigEndPattern (Length);
-			Console.WriteLine ("Internal Big:" + internalPattern);
+			//Console.WriteLine ("Internal Big:" + internalPattern);
 			//Easy mode (Exact Matches) 4 bytes
 			int indexOfPattern = internalPattern.IndexOf (Pattern);
 
